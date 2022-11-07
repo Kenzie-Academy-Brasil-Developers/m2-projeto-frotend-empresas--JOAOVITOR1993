@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/globalstyles.css">
+    <link rel="stylesheet" href="/src/styles/buttons.css">
+    <link rel="stylesheet" href="./login.css">
+    <title>Kenzie Empresas</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img src="/src/assets/icons/Ellipse 1.png" alt="">
+                <img src="/src/assets/icons/Kenzie Empresas.png" alt="">
+            </div>
+            <div>
+                <button id="botaoHomeLogin" class="botaoPadrao botaoBranco">Home</button>
+                <button id="botaoCadastroLogin" class="botaoPadrao botaoAzul">Cadastro</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form>
+            <h1>Login</h1>
+            <p>Preencha os campos para realizar login</p>
+            <input class="emailLogin" type="email" placeholder="Seu e-mail" required="true">
+            <input class="senhaLogin" type="password" placeholder="Sua senha" required="true">
+            <button id="botaoLogin" class="botaoPadraoForm botaoAzul"type="submit">Login</button>
+            <p>ou</p>
+            <button id="botaoCadastrar"class="botaoPadraoForm botaoBranco">Cadastre-se</button>
+        </form>
+    </main>
+    <div class="mensagemErro">
+        <p>Email ou senha invalidos</p>
+    </div>
+    <div class="mensagemSucesso">
+        <p>Login efetuado com sucesso</p>
+    </div>
+    <script type="module" src="./login.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/globalstyles.css">
+    <link rel="stylesheet" href="/src/styles/buttons.css">
+    <link rel="stylesheet" href="/src/pages/homepage/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img src="./src/assets/icons/Ellipse 1.png" alt="">
+                <img src="./src/assets/icons/Kenzie Empresas.png" alt="">
+            </div>
+            <div>
+                <button class="botaoLogin botaoPadrao botaoBranco">Login</button>
+                <button class="botaoCadastro botaoPadrao botaoAzul">Cadastro</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <img src="./src/assets/img/Rectangle 6.png" alt="">
+            <form class="formSetores">
+                <select class="selectSetores" name="setor">
+                    <option>Selecionar Setor</option>
+                </select>
+                <ul class="ulEmpresasFiltradas"></ul>
+            </form>
+        </div>
+    </main>
+   <script type="module" src="/src/pages/homepage/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  :root {
+    --color-grey-100: #000000;
+    --color-grey-200: #495057;
+    --color-grey-300: #A8A8A8;
+    --color-grey-400: #dee2e6;
+    --color-grey-500: #e9ecef;
+    --color-grey-600: #F8F8F8; 
+    --color-grey-700:#FFFFFF;
+    --color-brand-100: #4200FF;
+    --color-brand-200: #CE4646;
+    --color-brand-300:  #4BA036;
+    --font-size-1: 2.5rem;
+    --font-size-2: 1.75rem;
+    --font-size-3: 1.25rem;
+    --font-size-4: 1.12rem;
+    --radius-button: 2rem
+  }
+  
+  html{
+    background-color: var(--color-grey-700);
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-grey-100);
+  }
+  
+  .container{
+    max-width: 74rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+
+  .modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+
+  .mensagemErro{
+    width: 12.93rem;
+    height: 4,25rem;
+    background-color: var(--color-brand-200);
+    padding: 1.25rem 2.62rem;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 3rem;
+    right:  3rem;
+    display: none;
+    z-index: 1;
+}
+
+.mensagemErro p{
+    color: var(--color-grey-700);
+    font-size: 0.87rem;
+    text-align: center;
+}
+
+.mensagemSucesso{
+    width: 12.93rem;
+    height: 4,25rem;
+    background-color: var(--color-brand-300);
+    padding: 1.25rem 2.62rem;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 3rem;
+    right:  3rem;
+    display: none;
+    z-index: 1;
+}
+
+.mensagemSucesso p{
+    color: var(--color-grey-700);
+    font-size: 0.87rem;
+    text-align: center;
+}
+
+.ativarMensagem{
+    display: flex;
+}
+
+.fecharModal{
+  display: none;
+}
+
+
+::-webkit-scrollbar{
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:var(--color-brand-100);
+  border: var(--color-brand-100);
+}

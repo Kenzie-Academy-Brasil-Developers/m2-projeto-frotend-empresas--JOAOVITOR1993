@@ -1,0 +1,351 @@
+
+header{
+    width: 100%;
+    border-bottom: solid 1px var(--color-grey-500);
+    padding: 1.87rem 0;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div div:nth-child(1){
+    display: flex;
+    gap: 1rem;
+}
+
+header div div img:nth-child(1){
+    width: 1rem;
+    height: 1rem;
+}
+
+header div div img:nth-child(2){
+    width: 10.77rem;
+    height: 1.33rem;
+}
+
+header div div:nth-child(2){
+    display: flex;
+    gap: 1rem;
+}
+
+main{
+    margin-top: 6.5rem;
+}
+
+.departamentos > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.departamentos > div h2{
+    font-size: 1.87rem;
+}
+
+.departamentos > div select{
+    font-size: var(--font-size-3);
+    border-radius: 2rem;
+}
+
+.departamentos ul{
+    width: 100%;
+    height: 24.06rem;
+    background-color: var(--color-grey-600);
+    margin-top: 1.25rem;
+    padding: 2.12rem 3.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    overflow-x: auto;
+}
+
+.departamentos ul li{
+    width: 28rem;
+    height: 12.25rem;
+    background-color: var(--color-grey-700);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 0.56rem;
+    padding: 1.12rem 1.81rem;
+    border-bottom: solid 1px var(--color-brand-100);
+}
+
+.departamentos ul li h3{
+    font-size: var(--font-size-3);
+}
+
+.departamentos ul li p{
+    font-size: var(--font-size-4);
+}
+
+.departamentos ul li div{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+.departamentos ul li div button{
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.usuariosCadastrados{
+    margin-top: 4.31rem;
+}
+
+.usuariosCadastrados h2{
+    font-size: 1.87rem;
+    text-align: center;
+}
+
+.usuariosCadastrados ul{
+    width: 100%;
+    height: 24.06rem;
+    background-color: var(--color-grey-600);
+    margin-top: 1.25rem;
+    padding: 2.12rem 3.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    overflow-x: auto;
+}
+
+.usuariosCadastrados ul li{
+    width: 28rem;
+    height: 12.25rem;
+    background-color: var(--color-grey-700);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 0.56rem;
+    padding: 1.12rem 1.81rem;
+    border-bottom: solid 1px var(--color-brand-100);
+}
+
+.usuariosCadastrados ul li h3{
+    font-size: var(--font-size-3);
+}
+
+.usuariosCadastrados ul li p{
+    font-size: var(--font-size-4);
+}
+
+.usuariosCadastrados ul li div{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+.usuariosCadastrados ul li div button{
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.modalDepartamento{
+    width: 53.56rem;
+    height: 39.81rem;
+    background-color: var(--color-grey-700);
+    padding: 2.43rem 2.68rem;
+    position: relative;
+}
+
+.modalDepartamento > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalDepartamento > div h4{
+   font-size: 2.25rem;
+   margin-bottom: 1.25rem;
+}
+
+.modalDepartamento div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalDepartamento div:nth-child(2) div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+
+.modalDepartamento div:nth-child(2) div:nth-child(1) p:nth-child(1){
+   font-size: var(--font-size-3);
+   font-weight: 700;
+   margin-bottom: 0.68rem;
+}
+
+.modalDepartamento div:nth-child(2) div:nth-child(1) p:nth-child(2){
+    font-size: 1.12rem;
+}
+
+.modalDepartamento div:nth-child(2) div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.87rem;
+}
+
+.modalDepartamento div:nth-child(2) div:nth-child(2) select{
+    width: 26.37rem;
+    height: 3.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-size-4);
+    color: var(--color-grey-300);
+    cursor: pointer;
+}
+
+.modalDepartamento ul{
+    width: 100%;
+    margin-top: 3.18rem;
+    background-color: var(--color-grey-600);
+    padding: 2.68rem 2.06rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1.93rem;
+    overflow-x: auto;
+}
+
+.modalDepartamento ul li{
+    min-width: 19.12rem;
+    height: 12.25rem;
+    padding: 1.12rem 1.81rem;
+    background-color: var(--color-grey-700);
+    display: flex;
+    flex-direction: column;
+    gap: 0.62rem;
+    border-bottom: solid 1px var(--color-brand-100);
+}
+
+.modalDepartamento ul li h5{
+    font-size: var(--font-size-3);
+}
+
+.modalDepartamento ul li p{
+    font-size: var(--font-size-4);
+}
+
+.modalDepartamento ul li div{
+   margin: 0 auto;
+}
+
+.modalCriarDepartamento{
+    width: 31.62rem;
+    height: 25.12rem;
+    background-color: var(--color-grey-700);
+    padding: 2.43rem 2.68rem;
+    position: relative;
+}
+
+.modalCriarDepartamento h4{
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.modalCriarDepartamento input{
+    cursor: text;
+    width: 100%;
+    height: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-size-4);
+    color: var(--color-grey-100);
+    margin-bottom: 0.81rem;
+}
+
+.modalCriarDepartamento input::placeholder{
+    color: var(--color-grey-300);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-size-4);
+}
+
+.modalCriarDepartamento select{
+    cursor: pointer;
+    width: 100%;
+    height: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-size-4);
+    color: var(--color-grey-300);
+    margin-bottom: 0.81rem;
+}
+
+
+.modalEditarDepartamento{
+    width: 31.62rem;
+    height: 20.62rem;
+    background-color: var(--color-grey-700);
+    padding: 2.43rem 2.68rem;
+    position: relative;
+}
+
+.modalEditarDepartamento h4{
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
+} 
+
+.modalEditarDepartamento textarea{
+    width: 100%;
+    height: 7.06rem;
+    padding: 1.06rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-size-4);
+    color: var(--color-grey-300);
+}
+
+.modalDeletarDepartamento{
+    width: 45.81rem;
+    height: 21.37rem;
+    background-color: var(--color-grey-700);
+    padding: 4.12rem 9.68rem;
+    position: relative;
+}
+
+.modalDeletarDepartamento h4{
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.modalDeletarUsuario{
+    width: 45.81rem;
+    height: 18.25rem;
+    background-color: var(--color-grey-700);
+    padding: 4.12rem 9.68rem;
+    position: relative;
+}
+
+.modalDeletarUsuario h4{
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.modalEditarUsuario{
+    width: 31.62rem;
+    height: 21.37rem;
+    background-color: var(--color-grey-700);
+    padding: 2.43rem 2.62rem;
+    position: relative;
+}
+
+.modalEditarUsuario h4{
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.modalEditarUsuario select{
+    cursor: pointer;
+    width: 100%;
+    height: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-size-4);
+    color: var(--color-grey-300);
+    margin-bottom: 0.81rem;
+}
