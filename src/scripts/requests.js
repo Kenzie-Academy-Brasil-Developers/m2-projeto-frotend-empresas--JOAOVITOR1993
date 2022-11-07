@@ -54,7 +54,9 @@ export async function cadastrarUsuario(objeto){
         }else{
             const mensagemSucesso = document.querySelector(".mensagemSucesso")
             mensagemSucesso.classList.add("ativarMensagem")
-            window.location.assign("/src/pages/login/login.html")
+            setTimeout(function() {
+                window.location.assign("/src/pages/login/login.html")
+            }, 1000)
         }
     })
     .catch(err => console.log(err))
@@ -70,7 +72,7 @@ export async function loginUsuario(objeto){
         body: JSON.stringify(objeto)
     })
     .then(resp => resp.json())
-    .then(resp => {
+    .then(async resp => {
         if(resp.error){
             const mensagemErro = document.querySelector(".mensagemErro")
             mensagemErro.classList.add("ativarMensagem")
@@ -79,7 +81,16 @@ export async function loginUsuario(objeto){
              mensagemSucesso.classList.add("ativarMensagem")
 
              localStorage.setItem("@usuario:token", JSON.stringify(resp.token))
-             verificarTipoUsuario(resp.token)
+             const validacao = await verificarTipoUsuario(resp.token)
+                if(validacao.is_admin){
+                    setTimeout(function() {
+                        window.location.assign("/src/pages/adm/adm.html")
+                    }, 1000)
+                }else{
+                    setTimeout(function() {
+                        window.location.assign("/src/pages/user/user.html") 
+                    }, 1000)
+                }
          }
     })
     .catch(err => console.log(err))
@@ -89,7 +100,7 @@ export async function loginUsuario(objeto){
 
 
 export async function verificarTipoUsuario(token){
-    await fetch(`${url}/auth/validate_user`, {
+    const resposta = await fetch(`${url}/auth/validate_user`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
@@ -97,15 +108,10 @@ export async function verificarTipoUsuario(token){
         } 
     })
     .then(resp => resp.json())
-    .then(resp => {
-        if(resp.is_admin){
-            window.location.assign("/src/pages/adm/adm.html")
-        }else{
-            window.location.assign("/src/pages/user/user.html")
-        }
-      
-    })
+    .then(resp => resp)
     .catch(err => console.log(err))
+
+    return resposta
 }
 
 

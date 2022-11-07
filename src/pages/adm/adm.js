@@ -1,4 +1,5 @@
 import { 
+    verificarTipoUsuario,
     buscarDepartamentosPorEmpresa, 
     buscarTodasEmpresas, 
     buscarTodosDepartamentos, 
@@ -10,11 +11,15 @@ import {
     deletarUsuarioAdm, 
     demitirFuncionario, 
     editarDepartamento, 
-    editarUsuarioAdm,
+    editarUsuarioAdm
 } from "../../scripts/requests.js"
 import { validarPermissao } from "../user/user.js"
 
-validarPermissao(buscarTokenLocalSotarage())
+const urlAtualAdm = window.location
+
+if(urlAtualAdm.pathname === "/src/pages/adm/adm.html"){
+    
+}
 
 function buscarTokenLocalSotarage(){
     return JSON.parse(localStorage.getItem("@usuario:token"))
@@ -29,24 +34,10 @@ export function retirarMensagens(){
     mensagemSucesso.classList.add("fecharModal")
 }
 
-export async function verificarSeUsuarioAdm(token){
-    const resposta = await fetch("http://localhost:6278/auth/validate_user", {
-        method: "GET",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${token}`
-        } 
-    })
-    .then(resp => resp.json())
-    .then(resp => resp)
-    .catch(err => console.log(err))
-
-    return resposta
-}
-
-if(buscarTokenLocalSotarage()){
-    const resp = await verificarSeUsuarioAdm(buscarTokenLocalSotarage())
-if(resp.is_admin === true){
+if(buscarTokenLocalSotarage() && urlAtualAdm.pathname === "/src/pages/adm/adm.html"){
+    validarPermissao(buscarTokenLocalSotarage())
+    const resp = await verificarTipoUsuario(buscarTokenLocalSotarage())
+if(resp.is_admin){
     async function renderizarEmpresasPagAdm(array){
         const select = document.querySelector(".empresas")
        
