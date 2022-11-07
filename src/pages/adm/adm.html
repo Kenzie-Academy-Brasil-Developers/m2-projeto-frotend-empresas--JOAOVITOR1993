@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/globalstyles.css">
+    <link rel="stylesheet" href="/src/styles/buttons.css">
+    <link rel="stylesheet" href="./adm.css">
+    <title>>Kenzie Empresas</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img src="/src/assets/icons/Ellipse 1.png" alt="">
+                <img src="/src/assets/icons/Kenzie Empresas.png" alt="">
+            </div>
+            <div>
+                <button id="botaoLogout" class="botaoPadrao botaoBranco">Logout</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="departamentos container">
+            <div>
+                <h2>Departamentos</h2>
+                <select class="empresas" name="empresas">
+                    <option>Selecionar Empresa</option>
+                </select>
+                <button id="botaoCriarDep" class="botaoPadrao botaoAzul">+ Criar</button>
+            </div>
+            <ul class="ulDepartamentos"></ul>
+        </div>
+        <div class="usuariosCadastrados container">
+            <h2>Usuários cadastrados</h2>
+            <ul class="ulUsuariosCadastrados"></ul>
+        </div> 
+    </main>
+        <div class="mensagemErro">
+            <p>Verifique os dados e tente novamente</p>
+        </div>
+        <div class="mensagemSucesso">
+            <p>Criação de departamento bem sucedida</p>
+        </div>
+    <script type="module" src="./adm.js"></script>
+</body>
+</html

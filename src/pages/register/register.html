@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/globalstyles.css">
+    <link rel="stylesheet" href="/src/styles/buttons.css">
+    <link rel="stylesheet" href="./register.css">
+    <title>>Kenzie Empresas</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img src="/src/assets/icons/Ellipse 1.png" alt="">
+                <img src="/src/assets/icons/Kenzie Empresas.png" alt="">
+            </div>
+            <div>
+                <button id="botaoHome" class="botaoPadrao botaoBranco">Home</button>
+                <button id="botaoLogin" class="botaoPadrao botaoAzul">Login</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form>
+            <h1>Cadastre-se</h1>
+            <input class="nomeCadastro" type="text" placeholder="Seu nome" required="true">
+            <input class="emailCadastro" type="email" placeholder="Seu e-mail" required="true">
+            <input class="senhaCadastro" type="password" placeholder="Sua senha" required="true">
+            <select class="nivelCadastro">
+                <option>Nível profissional</option>
+                <option>estágio</option>
+                <option>júnior</option>
+                <option>pleno</option>
+                <option>sênior</option>
+            </select>
+            <button id="botaoCadastrar" class="botaoPadraoForm botaoAzul"type="submit">Cadastre-se</button>
+            <button id="botaoRetornar" class="botaoPadraoForm botaoBranco">Retornar</button>
+        </form>
+    </main>
+    <div class="mensagemErro">
+        <p>Email ou senha invalidos</p>
+    </div>
+    <div class="mensagemSucesso">
+        <p>Criação de usuário bem sucedida</p>
+    </div>
+    <script type="module" src="./register.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+.botaoPadrao{
+    cursor: pointer;
+    width: 8.87rem;
+    height: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--font-size-4);
+    font-weight: 700;
+}
+
+.botaoPadraoForm{
+    cursor: pointer;
+    width: 100%;
+    height: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--font-size-4);
+    font-weight: 700;
+}
+
+.botaoAzul{
+    background-color: var(--color-brand-100);
+    border: var(--color-brand-100);
+    color: var(--color-grey-700);
+}
+
+.botaoBranco{
+    background-color: var(--color-grey-700);
+    border: solid 1px var(--color-brand-100);
+    color: var(--color-brand-100);
+}
+
+.botaoVerde{
+    background-color: var(--color-brand-300);
+    border: var(--color-brand-300);
+    color: var(--color-grey-700);
+}
+
+.botaoFecharModal{
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+}
+
+.botaoVermelho{
+    background-color: var(--color-grey-700);
+    border: solid 1px var(--color-brand-200);
+    color: var(--color-brand-200);
+}

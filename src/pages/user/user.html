@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/globalstyles.css">
+    <link rel="stylesheet" href="/src/styles/buttons.css">
+    <link rel="stylesheet" href="./user.css">
+    <title>Kenzie Empresas</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img src="/src/assets/icons/Ellipse 1.png" alt="">
+                <img src="/src/assets/icons/Kenzie Empresas.png" alt="">
+            </div>
+            <div>
+                <button id="botaoLogoutUsuario" class="botaoPadrao botaoBranco">Logout</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div>
+                <h1 class="nome"></h1>
+                <div>
+                    <p class="email"></p>
+                    <p class="nivel"></p>
+                    <p class="modalidade"></p>
+                </div>
+            </div>
+            <button class="editarUsuario"><img src="/src/assets/icons/Vector (4).png" alt=""></button>
+        </div>
+      
+        <div class="empresaEColegas container">
+            <div>
+                <h2><span class="empresa"></span> - <span class="departamento"></span></h2>
+            </div>
+            <ul class="ulFuncionarios"></ul>
+        </div>
+    </main>
+    <script type="module" src="./user.js"></script>
+</body>
+</html
