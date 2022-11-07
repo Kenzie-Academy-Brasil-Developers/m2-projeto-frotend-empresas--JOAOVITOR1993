@@ -96,3 +96,17 @@
 .fecharModal{
   display: none;
 }
+
+
+::-webkit-scrollbar{
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:var(--color-brand-100);
+  border: var(--color-brand-100);
+}
